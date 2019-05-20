@@ -16,25 +16,25 @@
 ##### demo2 介绍路由的使用 【可以创建项目的时候选用vue-router也可以后期通过npm install vue-router添加路由，并在main.js中引入】
 
 
-Vue内容
-<!--1 模版: html结构-->
-<template>
-  <div id="app">
-    
-  </div>
-</template>
+### Vue内容
+##### <!--1 模版: html结构-->
+##### <template>
+##### <div id="app">
+#####    
+#####  </div>
+##### </template>
 
 
-<!--2 行为: 处理逻辑-->
-<script>
-export default {
- 
-}
-</script>
+#####    <!--2 行为: 处理逻辑-->
+#####  <script>
+##### export default {
+##### 
+#####  }
+#####  </script>
 
 
-<!--3 样式：解决样式-->
-<style>
-
-</style>
+#####    <!--3 样式：解决样式-->
+#####    <style>
+#####  
+#####   </style>
 
