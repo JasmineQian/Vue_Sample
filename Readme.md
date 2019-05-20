@@ -4,11 +4,11 @@
 ####  关于安装
 
 ####  关于新建项目
-#### vue init webpack demo1
-cd demo1
-npm install 或者 npm i
-npm run dev
-npm build
+#####  vue init webpack demo1
+##### cd demo1
+##### npm install 或者 npm i
+##### npm run dev
+##### npm build
 
 
 ##### demo1 介绍了Conponet组件的嵌套使用，将components目录下的组件嵌套到App.vue下使用
