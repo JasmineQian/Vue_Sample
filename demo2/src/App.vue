@@ -3,9 +3,12 @@
   <div id="app">
     <h1> {{title}}</h1>
     <img src="./assets/logo.png">
-    <router-link to="/account">Account</router-link>
-    <router-link to="/page1">Page1</router-link>
-    <router-link to="/page2">Page2</router-link>
+    <h1> App Vue</h1>
+    <router-link to="/helloworld">HelloWorld</router-link>
+    <router-link to="/page1">第一个页面</router-link>
+    <router-link to="/page2">第二个页面</router-link>
+    <router-link to="/news">新闻</router-link>
+    <router-link to="/friend">朋友圈</router-link>
     <router-view></router-view>
   </div>
 </template>
