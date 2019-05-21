@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>VueJS Tutorials</title>
+        <link href="styles.css" rel="stylesheet" />
+        <script src="https://unpkg.com/vue"></script>
+    </head>
+    <body>
+        <div id="vue-app">
+            <!-- 图片 -->
+            <div id="bag" v-bind:class="{ burst: ended }"></div>
+
+            <!-- 状态信息 -->
+            <div id="bag-health">
+                <div v-bind:style="{ width: health + '%' }"></div>
+            </div>
+
+            <!-- 游戏控制按钮 -->
+            <div id="controls">
+                <button v-on:click="punch" v-show="!ended">Punch</button>
+                <button v-on:click="restart">Restart</button>
+            </div>
+        </div>
+    </body>
+
+    <script src="app.js"></script>
+</html>
