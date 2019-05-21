@@ -1,26 +1,41 @@
 <template>
   <div id="app">
-    <h2>====================</h2>
-      <div class="container">
-        <Header></Header>
-      </div>
-        <div class="container">
-        <router-view></router-view>
-      </div>
- </div>
+    <img src="./assets/logo.png">
+    <Header/>
+    <Users></Users>
+    <Footer></Footer>
+  </div>
 </template>
 
 <script>
-import Header from './page/Header'
+import HelloWorld from './components/HelloWorld'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Users from './components/Users'
 
 export default {
-    components:{
-     Header
+  name: 'App',
+  components: {
+    HelloWorld,Header,Users,Footer
+  },
+   data(){
+    return{
+      
     }
-  
+  },
+  methods:{
+    
+  }
 }
 </script>
 
-<style scoped>
-
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 </style>

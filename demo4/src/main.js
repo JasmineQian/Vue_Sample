@@ -1,33 +1,35 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
-import App from './App.vue'
-import Home from './page/Home'
-import Menu from './page/Menu'
-import About from './about/About'
-import Login from './page/Login'
-import Register from './page/Register'
+import App from './App'
+
+Vue.config.productionTip = false
 
 
-Vue.use(VueRouter)
 
-const routes = [
-  {path: '/home', component: Home},
-  {path: '/menu', component: Menu},
-  {path: '/admin', component: Admin},
-  {path: '/register', component: Register},
-  {path: '/login', component: Login},
-  {path: '/about', component: About},
-]
- 
+// 注册全局组件
+// Vue.component("users",Users)
 
-const router = new VueRouter({
-    routes,
-    mode: 'history'
-})
-
-
+/* eslint-disable no-new */
+/* eslint-disable no-new */
 new Vue({
   el: '#app',
-  router,
   render: h => h(App)
 })
+
+
+/* index.html: 整个项目的入口文件  
+ * main.js: 整个项目的逻辑主文件  
+ * Vue实例: vue的实例化对象
+   包含: el / tem / com  
+ * temp: 模板中可以写html / 调用其他组件  
+ * <App/>:
+   代表模板要执行的组件文件,跟App.vue中的name属性有关  
+ * comp:
+   组件组中要包含需要调用的组件名,例如上面模板调用了<App/>,那么组件组中就一定要包含App组件  
+ * import:
+   import用于导入需要依赖的文件,例如上方组件组中,
+   想要引入App组件,那么首先要使用import引入这个组件文件  
+ * import .. from ..: import 后面是自己起的名字,from后面是组件的名字
+ */
+
+
+

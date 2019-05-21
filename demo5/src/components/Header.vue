@@ -14,7 +14,7 @@
       <line x1="16.62" y1="12" x2="10.88" y2="21.94"></line>
       </svg>
    </a>
-      <a class="navbar-brand">导航栏</a>
+      <a class="navbar-brand">511easy学习</a>
       <ul class="navbar-nav">
          <li><router-link to="/home" class="nav-link">主页</router-link></li>
          <li><router-link to="/menu" class="nav-link">菜单</router-link></li> 
