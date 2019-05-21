@@ -1,6 +1,6 @@
 "# Vue_Sample" 
 
-### vue1 是在html中直接加入 <script src="https://unpkg.com/vue"></script> 然后进行简单开发
+#####  vue1 是在html中直接加入 <script src="https://unpkg.com/vue"></script> 然后进行简单开发
 
 ### vue-cli常用的命令
 ####  关于安装
