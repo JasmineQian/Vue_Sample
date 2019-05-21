@@ -27,24 +27,24 @@
 
 
 ### Vue内容
-##### <!--1 模版: html结构-->
-##### <template>
-##### <div id="app">
-#####    
-#####  </div>
-##### </template>
+<!--1 模版: html结构-->
+<template>
+	<div id="app">
+   
+	</div>
+</template>
 
 
-#####    <!--2 行为: 处理逻辑-->
-#####  <script>
-##### export default {
-##### 
-#####  }
-#####  </script>
+<!--2 行为: 处理逻辑-->
+<script>
+	export default {
+
+ }
+ </script>
 
 
-#####    <!--3 样式：解决样式-->
-#####    <style>
-#####  
-#####   </style>
+<!--3 样式：解决样式-->
+<style>
+ 
+</style>
 
