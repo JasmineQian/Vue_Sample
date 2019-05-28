@@ -3,7 +3,12 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Admin from '@/components/Admin'
 import Login from '@/components/Login'
-import Menu from '@/components/Menu'
+import Hive from '@/components/Hive'
+import Learn from '@/components/Learn'
+import LearnDetails from '@/components/LearnDetails'
+import LearnUpdate from '@/components/LearnUpdate'
+import LearnInsert from '@/components/LearnInsert'
+
 import Register from '@/components/Register'
 import About from '@/components/about/About'
 
@@ -16,13 +21,17 @@ import Guide from '@/components/about/Guide'
 //333级路由
 import WechatDonate from '@/components/about/donate/WechatDonate'
 import AlipayDonate from '@/components/about/donate/AlipayDonate'
+import { compile } from 'vue-template-compiler';
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
-    {path: '/',component: Home},
-    {path: '/menu',component: Menu},
+    {path: '/', component: Home},
+    {path: '/learn',component: Learn},
+    {path: '/learnDetails', name: 'learnDetails', component:LearnDetails},
+    {path: '/learnUpdate',name: 'learnUpdate', component:LearnUpdate},
+    {path: '/learnInsert',component:LearnInsert},
     {path: '/admin',component: Admin},
     {path: '/about',component: About ,children :[
       {path: '/about/news',component: News},
@@ -36,6 +45,7 @@ export default new Router({
       {path:'/about*',redirect:'/about/news'}
     ]
     },
+    {path: '/hive',component: Hive},
     {path: '/login',component: Login},
     {path: '/register',component: Register},
     {path: '*',redirect: '/'}

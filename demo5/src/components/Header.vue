@@ -17,9 +17,13 @@
       <a class="navbar-brand">511easy学习</a>
       <ul class="navbar-nav">
          <li><router-link to="/home" class="nav-link">主页</router-link></li>
-         <li><router-link to="/menu" class="nav-link">菜单</router-link></li> 
+         <li><router-link to="/learn" class="nav-link">学习记录</router-link></li> 
+         <li><router-link to="/learnDetails" class="nav-link">详细学习</router-link></li>         
+         <li><router-link to="/learnInsert" class="nav-link">增加学习</router-link></li>  
+         <li><router-link to="/learnUpdate" class="nav-link">更新学习</router-link></li>  
          <li><router-link to="/admin" class="nav-link">管理</router-link></li> 
          <li><router-link to="/about" class="nav-link">关于我们</router-link></li> 
+         <li><router-link to="/hive" class="nav-link">Hive</router-link></li> 
       </ul>
 
       <ul class="navbar-nav ml-auto">

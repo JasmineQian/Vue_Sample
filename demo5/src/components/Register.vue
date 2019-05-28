@@ -1,5 +1,6 @@
 <template>
-    <div>
-        注册页面
-    </div>
+  <div> 
+    zhuce 
+  </div>
 </template>
+

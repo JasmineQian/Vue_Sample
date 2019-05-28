@@ -1,5 +1,3 @@
-"# Vue_Sample" 
-
 #####  vue1 是在html中直接加入 <script src="https://unpkg.com/vue"></script> 然后进行简单开发
 
 ### vue-cli常用的命令
@@ -25,6 +23,7 @@
 
 ##### demo6 在线翻译的demo【Vue Resource的使用，用过套件的使用，页面之间值的传递，cnpm install vue-resource,在main.js中引用import VueResource from 'vue-resource'并进行使用Vue.use(VueResource)】
 
+##### demo7 套间的路由
 
 ### Vue内容
 <!--1 模版: html结构-->
