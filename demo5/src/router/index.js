@@ -29,8 +29,8 @@ export default new Router({
   routes: [
     {path: '/', component: Home},
     {path: '/learn',component: Learn},
-    {path: '/learnDetails', name: 'learnDetails', component:LearnDetails},
-    {path: '/learnUpdate',name: 'learnUpdate', component:LearnUpdate},
+    {path: '/learnDetails/:id', name: 'learnDetails', component:LearnDetails},
+    {path: '/learnUpdate/:id',name: 'learnUpdate', component:LearnUpdate},
     {path: '/learnInsert',component:LearnInsert},
     {path: '/admin',component: Admin},
     {path: '/about',component: About ,children :[

@@ -6,6 +6,7 @@ import App from './App'
 import router from './router'
 
 Vue.config.productionTip = false
+Vue.prototype.baseURL = process.env.API_ROOT;
 
 Vue.use(VueResource)
 //Vue.http.header.common['Cookie']='JSESSIONID=C06A6F752337FEA8FFA74E98D3E4D6E1'

@@ -25,6 +25,8 @@
             <p>学习详细内容</p>
             <textarea type="text" v-model="content.details" required></textarea>
            
+           <br>
+           <br>
         </form>
 
 
@@ -34,45 +36,33 @@
 
 <script>
 export default {
+  name:"LearnDetail",
   data() {
       return {
-         content:{
-           id:"",
-           tid:"",
-           uid:"",
-           desc:"",
-           details:""
-         },
+         content:"",
           submmited: false,
-          params:"7"
+          id:""
          }
   },
   methods:{
     goToLearn(){
-      //跳转到上一次的页面
-      //this.$router.go(-1)
-
-      //指定跳转的地址
-      //this.$router.replace('/menu')
-
-      //指定跳转路由的名字下
-      //this.$router.replace({name:'menuLink'})
-
-      //通过push进行跳转
+     
+     //通过push进行跳转
       this.$router.push('/learn')
-      //this.$router.push({name:'/menu'})
+    },
 
-
+    fetchContent(id){
+      console.log(id);
+      this.$http.get("api/content/show/"+id)
+      .then((response) => {
+      console.log(response);
+      this.content= response.data;
+      })
     }
   },
 
   created(){
-      this.$http.get('http://localhost:8085/content/show/:to', params)
-      .then(function(details){
-          console.log(details);
-          this.content=details.data;
-          console.log(this.content);
-      })
+      this.fetchContent(this.$route.params.id);
   }
 
   
